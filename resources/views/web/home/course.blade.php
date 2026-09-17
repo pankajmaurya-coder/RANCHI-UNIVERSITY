@@ -44,11 +44,9 @@
                 <div class="course-image">
 
                     <img
-                        src="{{ asset('asset/student.webp') }}"
+                        src="{{ asset('asset/math.webp') }}"
                         alt="Mathematics students"
                     >
-
-
                     {{-- Image Overlay --}}
                     <div class="course-image-overlay"></div>
 
@@ -173,7 +171,7 @@
                 <div class="course-image">
 
                     <img
-                        src="{{ asset('asset/student.webp') }}"
+                        src="{{ asset('asset/computer.webp') }}"
                         alt="Computer applications students"
                     >
 

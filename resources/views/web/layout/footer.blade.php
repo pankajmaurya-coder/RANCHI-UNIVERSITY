@@ -333,19 +333,19 @@
 
 
                 <a href="#" aria-label="Facebook">
-                    f
+                    <i class="fa-brands fa-facebook" style="color: rgb(116, 192, 252);"></i>
                 </a>
 
                 <a href="#" aria-label="Instagram">
-                    ◎
+                   <i class="fa-brands fa-instagram" style="color: rgb(211, 9, 9);"></i>
                 </a>
 
                 <a href="#" aria-label="LinkedIn">
-                    in
+                    <i class="fa-brands fa-linkedin" style="color: rgb(116, 192, 252);"></i>
                 </a>
 
                 <a href="#" aria-label="YouTube">
-                    ▶
+                    <i class="fa-brands fa-youtube" style="color: rgb(197, 18, 18);"></i>
                 </a>
 
             </div>
@@ -381,38 +381,18 @@
                 </span>
 
                 TOP
-
             </a>
-
         </div>
 
-
-
-        {{-- =================================================
-            COPYRIGHT
-        ================================================= --}}
-
         <div class="footer-bottom">
-
-
             <p>
                 © {{ date('Y') }}
                 <strong>Ranchi University</strong>.
                 All Rights Reserved.
             </p>
 
-
             <div class="footer-bottom-links">
-
-                <a href="#">
-                    Privacy Policy
-                </a>
-
-                <span></span>
-
-                <a href="#">
-                    Terms &amp; Conditions
-                </a>
+                <p>Design and Develope By:- <a href="https://jharkhanditservices.com/">Jharkhand it Services</a></p>
 
             </div>
 

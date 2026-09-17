@@ -78,8 +78,7 @@
                         </h3>
 
                         <p>
-                            #34 Nationally for MCA &
-                            Mathematics
+                            Consistently ranked among top students in MCA & Mathematics
                         </p>
 
                     </div>
@@ -136,8 +135,7 @@
                         </h3>
 
                         <p>
-                            15+ State-of-the-Art
-                            Research Facilities
+                            Advanced Computing & Mathematics Labs
                         </p>
 
                     </div>
@@ -207,8 +205,7 @@
                         </h3>
 
                         <p>
-                            50+ Ph.D. Scholars &
-                            Industry Experts
+                            Industry Experts & Ph.D. Qualified Educators
                         </p>
 
                     </div>
@@ -275,8 +272,7 @@
                         </h3>
 
                         <p>
-                            95% Placement Rate for
-                            Graduates
+                            High Placement Rate with Top Recruiting Companies
                         </p>
 
                     </div>

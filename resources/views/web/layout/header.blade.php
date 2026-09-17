@@ -1,22 +1,17 @@
 <header class="site-header">
-
-    {{-- ================= TOP BAR ================= --}}
     <div class="top-bar">
-
         <div class="container top-bar-inner">
-
             <div class="top-contact">
-
                 <a href="mailto:maths@ranchiuniversity.ac.in">
                     <span class="top-icon">✉</span>
-                    maths@ranchiuniversity.ac.in
+                    dept_math@rediffmail.com
                 </a>
 
                 <span class="top-divider"></span>
 
-                <a href="tel:+916512234567">
+                <a href="tel:+91 0651-2960019">
                     <span class="top-icon">☎</span>
-                    +91 651 223 4567
+                    +91  0651-2960019
                 </a>
 
                 <span class="top-divider"></span>
@@ -53,36 +48,23 @@
             <a href="/" class="university-brand">
 
                 <div class="logo-box">
-                    <img
-                        src="{{ asset('asset/logo.png') }}"
-                        alt="Ranchi University Logo"
-                    >
+                    <img src="{{ asset('asset/logo.png') }}" alt="Ranchi University Logo">
                 </div>
 
-
                 <div class="brand-text">
-
                     <h1>RANCHI UNIVERSITY</h1>
-
-                    <div class="brand-line"></div>
-
+                    {{-- <div class="brand-line"></div> --}}
                     <h2>
                         DEPARTMENT OF MATHEMATICS
                         <span>& MCA APPLICATIONS</span>
                     </h2>
-
                 </div>
-
             </a>
-
 
 
             {{-- ================= DESKTOP NAVIGATION ================= --}}
             <nav class="desktop-nav">
-
                 <ul>
-
-
                     {{-- HOME --}}
                     <li>
                         <a href="/" class="nav-link active">
@@ -93,420 +75,122 @@
 
                     {{-- ABOUT --}}
                     <li>
-                        <a href="#" class="nav-link">
+                        <a href="{{ route('about') }}" class="nav-link">
                             About
                         </a>
                     </li>
 
 
-                    {{-- ================= ACADEMICS ================= --}}
+                    {{-- ================= Message ================= --}}
                     <li class="nav-dropdown">
 
-                        <button
-                            type="button"
-                            class="nav-link dropdown-toggle"
-                            aria-expanded="false"
-                        >
-
-                            <span>Academics</span>
-
+                        <button type="button" class="nav-link dropdown-toggle" aria-expanded="false">
+                            <span>Message</span>
                             <span class="arrow">⌄</span>
-
                         </button>
 
-
                         <div class="dropdown-menu">
-
-
-                            <div class="dropdown-header">
-
-                                <span class="dropdown-label">
-                                    EXPLORE
-                                </span>
-
-                                <h3>
-                                    Academic Programs
-                                </h3>
-
-                                <p>
-                                    Discover our programs, curriculum
-                                    and academic resources.
-                                </p>
-
-                            </div>
-
-
                             <div class="dropdown-links">
-
-                                <a href="#">
+                                <a href="{{ route('chancellor') }}">
                                     <span class="menu-icon">↗</span>
-
                                     <span class="menu-content">
                                         <strong>
-                                            Undergraduate Programs
+                                            Vice-Chancellor
                                         </strong>
-
-                                        <small>
-                                            Explore undergraduate courses
-                                        </small>
                                     </span>
-
                                     <span class="menu-arrow">→</span>
                                 </a>
 
-
-                                <a href="#">
+                                <a href="{{ route('director') }}">
                                     <span class="menu-icon">↗</span>
-
                                     <span class="menu-content">
                                         <strong>
-                                            Postgraduate Programs
+                                            Director
                                         </strong>
-
-                                        <small>
-                                            Advanced academic programs
-                                        </small>
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
                                 </a>
 
-
-                                <a href="#">
+                                <a href="{{ route('ordinator') }}">
                                     <span class="menu-icon">↗</span>
-
                                     <span class="menu-content">
                                         <strong>
-                                            MCA Applications
+                                            Co-Ordinator
                                         </strong>
-
-                                        <small>
-                                            Admission and application details
-                                        </small>
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
                                 </a>
-
-
-                                <a href="#">
-                                    <span class="menu-icon">↗</span>
-
-                                    <span class="menu-content">
-                                        <strong>
-                                            Syllabus
-                                        </strong>
-
-                                        <small>
-                                            Course curriculum and syllabus
-                                        </small>
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
-                                </a>
-
-
-                                <a href="#">
-                                    <span class="menu-icon">↗</span>
-
-                                    <span class="menu-content">
-                                        <strong>
-                                            Academic Calendar
-                                        </strong>
-
-                                        <small>
-                                            Important academic dates
-                                        </small>
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
-                                </a>
-
                             </div>
-
                         </div>
-
                     </li>
 
 
 
                     {{-- FACULTY --}}
                     <li>
-                        <a href="#" class="nav-link">
+                        <a href="{{route('faculty')}}" class="nav-link">
                             Faculty
                         </a>
                     </li>
 
-
-                    {{-- RESEARCH --}}
                     <li>
                         <a href="#" class="nav-link">
-                            Research
+                            Syllabus
                         </a>
                     </li>
 
-
-                    {{-- ================= STUDENTS ================= --}}
                     <li class="nav-dropdown">
-
-                        <button
-                            type="button"
-                            class="nav-link dropdown-toggle"
-                            aria-expanded="false"
-                        >
-
-                            <span>Students</span>
-
+                        <button type="button" class="nav-link dropdown-toggle" aria-expanded="false">
+                            <span>More</span>
                             <span class="arrow">⌄</span>
-
                         </button>
-
-
                         <div class="dropdown-menu">
-
-
-                            <div class="dropdown-header">
-
-                                <span class="dropdown-label">
-                                    STUDENT LIFE
-                                </span>
-
-                                <h3>
-                                    Student Resources
-                                </h3>
-
-                                <p>
-                                    Everything students need in one place.
-                                </p>
-
-                            </div>
-
-
                             <div class="dropdown-links">
+                                <a href="#">
+                                    <span class="menu-icon">↗</span>
+                                    <span class="menu-content">
+                                        <strong>
+                                            Alumni
+                                        </strong>
+                                    </span>
+                                    <span class="menu-arrow">→</span>
+                                </a>
 
                                 <a href="#">
-
                                     <span class="menu-icon">↗</span>
-
                                     <span class="menu-content">
-
                                         <strong>
-                                            Student Activities
+                                           Calender
                                         </strong>
-
-                                        <small>
-                                            Clubs, events and activities
-                                        </small>
-
                                     </span>
-
                                     <span class="menu-arrow">→</span>
+                                </a>
 
+
+                                <a href="{{route('gallery')}}">
+                                    <span class="menu-icon">↗</span>
+                                    <span class="menu-content">
+                                        <strong>
+                                            Gallery
+                                        </strong> 
+                                    </span>
+                                    <span class="menu-arrow">→</span>
                                 </a>
 
 
                                 <a href="#">
-
                                     <span class="menu-icon">↗</span>
-
                                     <span class="menu-content">
-
                                         <strong>
-                                            Notices
+                                           Admission
                                         </strong>
-
-                                        <small>
-                                            Latest student announcements
-                                        </small>
-
                                     </span>
-
                                     <span class="menu-arrow">→</span>
-
                                 </a>
-
-
-                                <a href="#">
-
-                                    <span class="menu-icon">↗</span>
-
-                                    <span class="menu-content">
-
-                                        <strong>
-                                            Examination
-                                        </strong>
-
-                                        <small>
-                                            Examination information
-                                        </small>
-
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
-
-                                </a>
-
-
-                                <a href="#">
-
-                                    <span class="menu-icon">↗</span>
-
-                                    <span class="menu-content">
-
-                                        <strong>
-                                            Results
-                                        </strong>
-
-                                        <small>
-                                            Examination results
-                                        </small>
-
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
-
-                                </a>
-
                             </div>
-
                         </div>
-
-                    </li>
-
-
-
-                    {{-- ================= RESOURCES ================= --}}
-                    <li class="nav-dropdown">
-
-                        <button
-                            type="button"
-                            class="nav-link dropdown-toggle"
-                            aria-expanded="false"
-                        >
-
-                            <span>Resources</span>
-
-                            <span class="arrow">⌄</span>
-
-                        </button>
-
-
-                        <div class="dropdown-menu">
-
-
-                            <div class="dropdown-header">
-
-                                <span class="dropdown-label">
-                                    KNOWLEDGE
-                                </span>
-
-                                <h3>
-                                    Academic Resources
-                                </h3>
-
-                                <p>
-                                    Access publications, papers and
-                                    learning resources.
-                                </p>
-
-                            </div>
-
-
-                            <div class="dropdown-links">
-
-                                <a href="#">
-
-                                    <span class="menu-icon">↗</span>
-
-                                    <span class="menu-content">
-
-                                        <strong>
-                                            Downloads
-                                        </strong>
-
-                                        <small>
-                                            Forms and useful documents
-                                        </small>
-
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
-
-                                </a>
-
-
-                                <a href="#">
-
-                                    <span class="menu-icon">↗</span>
-
-                                    <span class="menu-content">
-
-                                        <strong>
-                                            Publications
-                                        </strong>
-
-                                        <small>
-                                            Academic publications
-                                        </small>
-
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
-
-                                </a>
-
-
-                                <a href="#">
-
-                                    <span class="menu-icon">↗</span>
-
-                                    <span class="menu-content">
-
-                                        <strong>
-                                            Research Papers
-                                        </strong>
-
-                                        <small>
-                                            Research and publications
-                                        </small>
-
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
-
-                                </a>
-
-
-                                <a href="#">
-
-                                    <span class="menu-icon">↗</span>
-
-                                    <span class="menu-content">
-
-                                        <strong>
-                                            Study Materials
-                                        </strong>
-
-                                        <small>
-                                            Learning resources
-                                        </small>
-
-                                    </span>
-
-                                    <span class="menu-arrow">→</span>
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
                     </li>
 
 
                     {{-- CONTACT --}}
                     <li>
-                        <a href="#" class="nav-link">
+                        <a href="{{route('contact')}}" class="nav-link">
                             Contact
                         </a>
                     </li>
@@ -518,13 +202,8 @@
 
 
             {{-- ================= MOBILE BUTTON ================= --}}
-            <button
-                type="button"
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Open menu"
-                aria-expanded="false"
-            >
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu"
+                aria-expanded="false">
 
                 <span></span>
                 <span></span>
@@ -540,31 +219,18 @@
 
     {{-- ================= MOBILE MENU ================= --}}
     <div class="mobile-menu" id="mobileMenu">
-
         <nav>
-
-
             <a href="/" class="mobile-link active">
                 Home
             </a>
-
-
             <a href="#" class="mobile-link">
                 About
             </a>
 
-
-
             {{-- MOBILE ACADEMICS --}}
             <div class="mobile-dropdown">
-
-                <button
-                    type="button"
-                    class="mobile-dropdown-toggle"
-                >
-
-                    <span>Academics</span>
-
+                <button type="button" class="mobile-dropdown-toggle">
+                    <span>Message</span>
                     <span class="mobile-arrow">
                         ⌄
                     </span>
@@ -573,95 +239,31 @@
 
 
                 <div class="mobile-submenu">
-
-                    <a href="#">
-                        Undergraduate Programs
+                    <a href="{{ route('chancellor') }}">
+                        vice-Chancellor
                     </a>
-
-                    <a href="#">
-                        Postgraduate Programs
+                    <a href="{{ route('director') }}">
+                        Director
                     </a>
-
-                    <a href="#">
-                        MCA Applications
+                    <a href="{{ route('ordinator') }}">
+                        Co-Ordinator
                     </a>
-
-                    <a href="#">
-                        Syllabus
-                    </a>
-
-                    <a href="#">
-                        Academic Calendar
-                    </a>
-
                 </div>
-
             </div>
 
-
-
-            <a href="#" class="mobile-link">
+            <a href="{{route('faculty')}}" class="mobile-link">
                 Faculty
             </a>
 
-
             <a href="#" class="mobile-link">
-                Research
+                Syllabus
             </a>
-
-
-
-            {{-- MOBILE STUDENTS --}}
-            <div class="mobile-dropdown">
-
-                <button
-                    type="button"
-                    class="mobile-dropdown-toggle"
-                >
-
-                    <span>Students</span>
-
-                    <span class="mobile-arrow">
-                        ⌄
-                    </span>
-
-                </button>
-
-
-                <div class="mobile-submenu">
-
-                    <a href="#">
-                        Student Activities
-                    </a>
-
-                    <a href="#">
-                        Notices
-                    </a>
-
-                    <a href="#">
-                        Examination
-                    </a>
-
-                    <a href="#">
-                        Results
-                    </a>
-
-                </div>
-
-            </div>
-
-
 
             {{-- MOBILE RESOURCES --}}
             <div class="mobile-dropdown">
 
-                <button
-                    type="button"
-                    class="mobile-dropdown-toggle"
-                >
-
-                    <span>Resources</span>
-
+                <button type="button" class="mobile-dropdown-toggle">
+                    <span>More</span>
                     <span class="mobile-arrow">
                         ⌄
                     </span>
@@ -672,27 +274,26 @@
                 <div class="mobile-submenu">
 
                     <a href="#">
-                        Downloads
+                       Alumni
                     </a>
 
                     <a href="#">
-                        Publications
+                       Calender
+                    </a>
+
+                    <a href="{{route('gallery')}}">
+                        Gallery
                     </a>
 
                     <a href="#">
-                        Research Papers
-                    </a>
-
-                    <a href="#">
-                        Study Materials
+                        Admission
                     </a>
 
                 </div>
 
             </div>
 
-
-            <a href="#" class="mobile-link">
+            <a href="{{route('contact')}}" class="mobile-link">
                 Contact
             </a>
         </nav>
