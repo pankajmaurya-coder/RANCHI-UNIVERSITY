@@ -1,56 +1,47 @@
-{{-- =========================================================
-    PREMIUM NOTICE SECTION
-========================================================= --}}
-
 <section class="notice-section">
-
     <div class="container">
-
         <div class="notice-layout">
-
-
-            {{-- =================================================
-                LEFT : NOTICE AREA
-            ================================================= --}}
-
             <div class="notice-panel">
-
-
-                {{-- Heading --}}
+                {{--         
                 <div class="notice-heading">
-
                     <span class="notice-eyebrow">
                         STAY INFORMED
                     </span>
-
                     <h2>
                         Latest Notices
                     </h2>
+                    <p>
+                        Important announcements, updates and
+                        circulars from across the University.
+                    </p>
+                </div> --}}
+
+                <div class="title">
+                    <div class="section-eyebrow">
+                        <span></span>
+                        <small>
+                             STAY INFORMED
+                        </small>
+                        <span></span>
+                    </div>
+
+                    <h2 class="heading-primary">
+                        Latest <em>Notices</em>
+                    </h2>
+
 
                     <p>
                         Important announcements, updates and
                         circulars from across the University.
                     </p>
-
                 </div>
 
-
-                {{-- =================================================
-                    NOTICE LIST
-                ================================================= --}}
-
                 <div class="notice-list">
-
-
                     {{-- NOTICE 1 --}}
                     <a href="#" class="notice-item">
-
                         <div class="notice-date">
-
                             <strong>18</strong>
-
                             <span>SEP</span>
-
                         </div>
 
 
@@ -232,11 +223,7 @@
 
 
                 {{-- Image --}}
-                <img
-                    src="{{ asset('asset/notice.webp') }}"
-                    alt="Ranchi University"
-                    class="notice-image"
-                >
+                <img src="{{ asset('asset/notice.webp') }}" alt="Ranchi University" class="notice-image">
 
 
                 {{-- Dark overlay --}}

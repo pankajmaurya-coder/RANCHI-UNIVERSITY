@@ -11,7 +11,7 @@
 
                 <a href="tel:+91 0651-2960019">
                     <span class="top-icon">☎</span>
-                    +91  0651-2960019
+                    +91 0651-2960019
                 </a>
 
                 <span class="top-divider"></span>
@@ -52,11 +52,12 @@
                 </div>
 
                 <div class="brand-text">
-                    <h1>RANCHI UNIVERSITY</h1>
+                    {{-- <h1>RANCHI UNIVERSITY</h1> --}}
+                    <h1>DEPARTMENT OF MATHEMATICS</h1>
                     {{-- <div class="brand-line"></div> --}}
                     <h2>
-                        DEPARTMENT OF MATHEMATICS
-                        <span>& MCA APPLICATIONS</span>
+
+                        <span>Ranchi University</span>
                     </h2>
                 </div>
             </a>
@@ -120,18 +121,16 @@
                         </div>
                     </li>
 
-
-
                     {{-- FACULTY --}}
                     <li>
-                        <a href="{{route('faculty')}}" class="nav-link">
+                        <a href="{{ route('faculty') }}" class="nav-link">
                             Faculty
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link">
-                            Syllabus
+                        <a href="{{route('university')}}" class="nav-link">
+                            University
                         </a>
                     </li>
 
@@ -152,23 +151,35 @@
                                     <span class="menu-arrow">→</span>
                                 </a>
 
+
                                 <a href="#">
                                     <span class="menu-icon">↗</span>
                                     <span class="menu-content">
                                         <strong>
-                                           Calender
+                                            Calender
+                                        </strong>
+                                    </span>
+                                    <span class="menu-arrow">→</span>
+                                </a>
+
+                                <a href="{{ asset('asset/MCA(4Sem)CBCSSyllabus (1).pdf') }}"
+                         class="nav-link" target="_blank">
+                                    <span class="menu-icon">↗</span>
+                                    <span class="menu-content">
+                                        <strong>
+                                            Syllabus
                                         </strong>
                                     </span>
                                     <span class="menu-arrow">→</span>
                                 </a>
 
 
-                                <a href="{{route('gallery')}}">
+                                <a href="{{ route('gallery') }}">
                                     <span class="menu-icon">↗</span>
                                     <span class="menu-content">
                                         <strong>
                                             Gallery
-                                        </strong> 
+                                        </strong>
                                     </span>
                                     <span class="menu-arrow">→</span>
                                 </a>
@@ -178,7 +189,7 @@
                                     <span class="menu-icon">↗</span>
                                     <span class="menu-content">
                                         <strong>
-                                           Admission
+                                            Admission
                                         </strong>
                                     </span>
                                     <span class="menu-arrow">→</span>
@@ -187,34 +198,24 @@
                         </div>
                     </li>
 
-
                     {{-- CONTACT --}}
                     <li>
-                        <a href="{{route('contact')}}" class="nav-link">
+                        <a href="{{ route('contact') }}" class="nav-link">
                             Contact
                         </a>
                     </li>
-
                 </ul>
-
             </nav>
 
-
-
             {{-- ================= MOBILE BUTTON ================= --}}
-            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu"
-                aria-expanded="false">
-
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
 
             </button>
-
         </div>
-
     </div>
-
 
 
     {{-- ================= MOBILE MENU ================= --}}
@@ -251,12 +252,12 @@
                 </div>
             </div>
 
-            <a href="{{route('faculty')}}" class="mobile-link">
+            <a href="{{ route('faculty') }}" class="mobile-link">
                 Faculty
             </a>
 
-            <a href="#" class="mobile-link">
-                Syllabus
+            <a href="{{route('university') }}" class="mobile-link">
+                University
             </a>
 
             {{-- MOBILE RESOURCES --}}
@@ -274,15 +275,20 @@
                 <div class="mobile-submenu">
 
                     <a href="#">
-                       Alumni
+                        Alumni
                     </a>
 
                     <a href="#">
-                       Calender
+                        Calender
                     </a>
 
-                    <a href="{{route('gallery')}}">
+                    <a href="{{ route('gallery') }}">
                         Gallery
+                    </a>
+
+                    <a href="{{ asset('asset/MCA(4Sem)CBCSSyllabus (1).pdf') }}"
+                         class="nav-link" target="_blank">
+                        Syllabus
                     </a>
 
                     <a href="#">
@@ -293,7 +299,7 @@
 
             </div>
 
-            <a href="{{route('contact')}}" class="mobile-link">
+            <a href="{{ route('contact') }}" class="mobile-link">
                 Contact
             </a>
         </nav>

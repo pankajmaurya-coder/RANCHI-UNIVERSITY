@@ -25,37 +25,17 @@
             </p>
         </div>
 
-
-
-        {{-- =================================================
-            COURSE GRID
-        ================================================= --}}
-
         <div class="courses-grid">
-
-
-            {{-- =================================================
-                MATHEMATICS
-            ================================================= --}}
-
             <article class="course-card">
-
-                {{-- Image --}}
                 <div class="course-image">
-
                     <img
                         src="{{ asset('asset/math.webp') }}"
                         alt="Mathematics students"
                     >
                     {{-- Image Overlay --}}
                     <div class="course-image-overlay"></div>
-
-
-                    {{-- Category --}}
                     <span class="course-badge">
-
                         <span class="badge-icon">
-
                             <svg
                                 viewBox="0 0 24 24"
                                 fill="none"
@@ -65,40 +45,26 @@
                                 <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5V5.5Z"/>
                                 <path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"/>
                             </svg>
-
                         </span>
-
                         SCIENCE
-
                     </span>
-
-
                     {{-- Image number --}}
                     <span class="course-number">
                         01
                     </span>
-
                 </div>
-
 
                 {{-- Content --}}
                 <div class="course-content">
-
-
                     <div class="course-title-row">
-
                         <div>
-
                             <span class="course-label">
                                 DEPARTMENT OF MATHEMATICS
                             </span>
-
                             <h3>
                                 Mathematics
                             </h3>
-
                         </div>
-
                     </div>
 
 

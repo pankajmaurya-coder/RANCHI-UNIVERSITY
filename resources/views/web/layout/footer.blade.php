@@ -103,23 +103,19 @@
 
             <div class="footer-brand">
 
-
                 <div class="footer-logo-wrap">
-
                     <div class="footer-logo-ring">
-
                         <img
                             src="{{ asset('asset/logo.png') }}"
                             alt="Ranchi University Logo"
                         >
-
                     </div>
-
                 </div>
 
-
                 <h2>
-                    RANCHI UNIVERSITY
+                    DEPARTMENT OF MATHEMATICS
+                     {{-- font-size: clamp(16px, 3vw, 22px); --}}
+                    {{-- RANCHI UNIVERSITY --}}
                 </h2>
 
 
@@ -133,9 +129,7 @@
 
 
                 <p class="footer-department">
-                    DEPARTMENT OF MATHEMATICS
-                    <b>&amp;</b>
-                    MCA APPLICATIONS
+                    RANCHI UNIVERSITY
                 </p>
 
 
@@ -152,8 +146,6 @@
             ============================================== --}}
 
             <div class="footer-column footer-contact">
-
-
                 {{-- Office --}}
 
                 <div class="footer-contact-item">
@@ -355,9 +347,7 @@
             {{-- Motto --}}
 
             <div class="footer-quote">
-
                 <span></span>
-
                 <p>
                     EMPOWERING MINDS · ENRICHING LIVES
                 </p>

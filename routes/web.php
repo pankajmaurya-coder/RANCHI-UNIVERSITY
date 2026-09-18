@@ -12,3 +12,5 @@ Route::view('/co-ordinator', 'web.navbar.ordinator')->name('ordinator');
 Route::view('/faculty', 'web.navbar.faculty')->name('faculty');
 Route::view('/contact', 'web.navbar.contact')->name('contact');
 Route::view('/gallery', 'web.navbar.gallery')->name('gallery');
+
+Route::view('/ranchi-university', 'web.navbar..university.index')->name('university');

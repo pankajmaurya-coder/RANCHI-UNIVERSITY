@@ -56,15 +56,17 @@
 .content,
 content > p {
     font-family: var(--font-main);
-    /* font-size: 1rem; */
-  font-size: clamp(16px, 4vw, 22px);
-    /* font-size: 1rem; */
+
+  font-size: clamp(14px, 4vw, 20px);
     font-weight: 400;
     line-height: 1.5;
     text-align: justify;
     color: var(--muted);
 }
 
+.sec-content{
+    padding-block: 20px;
+}
 .divider{
     max-width: 250px;
 }
@@ -340,11 +342,6 @@ content > p {
     align-items: start;
 }
 
-
-/* =========================================================
-   SIDEBAR
-========================================================= */
-
 .vc-sidebar {
     display: grid;
     gap: 24px;
@@ -353,9 +350,6 @@ content > p {
 }
 
 
-/* =========================================================
-   PROFILE CARD
-========================================================= */
 
 .vc-profile {
     overflow: hidden;
@@ -2359,4 +2353,431 @@ content > p {
         font-size: 27px;
     }
 
+}
+
+/* university */
+/* ===============================
+   UNIVERSITY AT A GLANCE
+================================ */
+
+.glance {
+    padding: 30px 0;
+    background: #f5f8fc;
+}
+
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.section-label span {
+    width: 36px;
+    height: 2px;
+    background: var(--accent);
+}
+
+.glance-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.glance-item {
+    position: relative;
+    padding: 20px 10px;
+    text-align: center;
+
+    display: grid;
+    place-items: center;
+    gap: 6px;
+}
+
+.glance-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background: var(--border);
+}
+
+.glance-item i {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.glance-item strong {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: var(--primary);
+}
+
+.glance-item p {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 1.3;
+    color: var(--secondary);
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+    .glance-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .glance-item:nth-child(3)::after,
+    .glance-item:nth-child(6)::after {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .glance {
+        padding: 25px 0;
+    }
+
+    .glance-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .glance-item:nth-child(2n)::after {
+        display: none;
+    }
+
+    .glance-item strong {
+        font-size: 22px;
+    }
+
+    .glance-item p {
+        font-size: 11px;
+    }
+}
+/* =========================================
+   UNIVERSITY FEATURES
+========================================= */
+
+.university-features {
+    padding: 34px 0;
+    background: #fff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.feature-card {
+    display: flex;
+    gap: 18px;
+    padding: 8px 28px;
+    border-right: 1px solid var(--border);
+}
+
+.feature-card:first-child {
+    padding-left: 0;
+}
+
+.feature-card:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+
+/* Icon */
+
+.feature-icon {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #eef4fb;
+
+    color: var(--primary);
+    font-size: 22px;
+}
+
+
+/* Content */
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h3 {
+    margin: 2px 0 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: var(--primary);
+}
+
+.feature-content p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.55;
+
+    color: var(--muted);
+}
+
+
+/* Hover */
+
+.feature-card {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+}
+
+.feature-card:hover .feature-icon {
+    background: #f8f0df;
+    color: var(--accent);
+}
+
+
+@media (max-width: 1000px) {
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 0;
+    }
+
+    .feature-card:nth-child(2) {
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    .feature-card:nth-child(3) {
+        padding-left: 0;
+    }
+
+    .feature-card:nth-child(3),
+    .feature-card:nth-child(4) {
+        padding-top: 8px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .university-features {
+        padding: 28px 0;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .feature-card,
+    .feature-card:first-child,
+    .feature-card:nth-child(3),
+    .feature-card:nth-child(4) {
+        padding: 0 0 24px;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .feature-card:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .feature-icon {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .feature-content h3 {
+        font-size: 16px;
+    }
+
+    .feature-content p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+/* =========================================
+   FUTURE VISION
+========================================= */
+
+.future-vision {
+    position: relative;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+}
+
+.future-vision-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+.future-vision-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background: linear-gradient(
+        90deg,
+        rgba(5, 30, 60, 0.96) 0%,
+        rgba(5, 30, 60, 0.86) 42%,
+        rgba(5, 30, 60, 0.25) 100%
+    );
+}
+
+.future-vision .container {
+    position: relative;
+    z-index: 2;
+}
+
+.future-vision-content {
+    max-width: 620px;
+    padding: 55px 0;
+}
+
+.future-vision .section-label {
+    margin-bottom: 14px;
+    color: var(--accent);
+}
+
+.future-vision h2 {
+    margin: 0 0 16px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.05;
+    font-weight: 700;
+
+    color: #fff;
+}
+
+.future-vision p {
+    max-width: 580px;
+    margin: 0 0 24px;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.future-vision-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 11px 20px;
+    border-radius: 30px;
+
+    background: var(--accent);
+    color: var(--primary);
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.future-vision-btn i {
+    transition: transform 0.3s ease;
+}
+
+.future-vision-btn:hover {
+    background: #fff;
+}
+
+.future-vision-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .future-vision {
+        min-height: 400px;
+    }
+
+    .future-vision-content {
+        max-width: 100%;
+        padding: 45px 0;
+    }
+
+    .future-vision h2 {
+        font-size: clamp(30px, 8vw, 40px);
+    }
+
+    .future-vision p {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .future-vision {
+        min-height: 430px;
+    }
+
+    .future-vision-overlay {
+        background: rgba(5, 30, 60, 0.82);
+    }
+
+    .future-vision-content {
+        padding: 40px 0;
+    }
+
+    .future-vision h2 {
+        font-size: 30px;
+    }
+
+    .future-vision p {
+        font-size: 13px;
+    }
 }

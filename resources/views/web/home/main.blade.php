@@ -1,39 +1,31 @@
 <section class="stats-section">
-
-    <div class="stats-container">
-
-        {{-- ================= HEADING ================= --}}
-        <div class="stats-heading">
-
-            <span class="stats-eyebrow">
-                AT A GLANCE
-            </span>
-
-            <h2>
-                Dynamic Spotlight Statistics
+    <div class="container">
+        <div class="title">
+            <div class="section-eyebrow">
+                <span></span>
+                <small>
+                     AT A GLANCE
+                </small>
+                <span></span>
+            </div>
+            <h2 class="heading-primary">
+               Dynamic Spotlight <em>Statistics</em>
             </h2>
-
             <p>
                 A snapshot of our academic excellence,
                 research capabilities and global impact.
             </p>
-
         </div>
 
 
-        {{-- ================= CARDS ================= --}}
+        {{-- ======= CARDS =========== --}}
         <div class="stats-grid">
-
-
-            {{-- ================= CARD 01 ================= --}}
+            {{-- ======= CARD 01 ======= --}}
             <article class="stat-card">
-
-                {{-- Background Image --}}
                 <div
                     class="stat-card-bg"> 
                     <img src="{{asset('asset/spot/trophy.png')}}">
                 </div>
-
 
                 <div class="stat-card-inner">
                     <div class="stat-icon">
@@ -60,15 +52,11 @@
 
                             <path d="M9 4V2h6v2"/>
                         </svg>
-
                     </div>
 
-
-                    {{-- Category --}}
                     <span class="stat-category">
                         EXCELLENCE
                     </span>
-
 
                     {{-- Content --}}
                     <div class="stat-content">

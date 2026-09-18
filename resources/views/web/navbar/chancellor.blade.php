@@ -34,23 +34,14 @@
         </div>
     </section>
 
-    {{-- =========================================================
-    VICE-CHANCELLOR'S DESK
-========================================================= --}}
-
 <section class="vc-section">
     <div class="container">
-
         <div class="vc-layout">
-
-            {{-- ================= LEFT COLUMN ================= --}}
             <aside class="vc-sidebar">
-
                 <div class="vc-profile">
-
                     <div class="vc-image">
                         <img
-                            src="{{ asset('asset/chancellor.png') }}"
+                            src="{{ asset('asset/navbar/faculty/vc.png') }}"
                             alt="Vice-Chancellor, Ranchi University"
                         >
                     </div>

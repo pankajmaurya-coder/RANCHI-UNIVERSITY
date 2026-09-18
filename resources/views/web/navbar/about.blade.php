@@ -121,7 +121,7 @@
 
                 <!-- Description -->
                 <div class="mt-6 space-y-5 text-slate-600 
-                            text-base sm:text-lg leading-8">
+                            text-base sm:text-lg leading-8 content sec-content">
 
                     <p>
                         The University Department of Mathematics is one of the
